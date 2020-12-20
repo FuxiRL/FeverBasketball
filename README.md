@@ -15,11 +15,15 @@ usefull links:
 
 # **Quick Start**
 
-Clone the project to your computer:  
+<br/>1. Clone the project to your computer:  
 `$ git clone ssh://git@gitlab.leihuo.netease.com:32200/jiahangtian/feverbasketball-opensource.git`  
 `$ cd feverbasketball-opensource `  
 
-Run socket server to handle requests of basketball players from game clients:  
+<br/>2. Download game clients:
+- from [Google drive](https://drive.google.com/drive/folders/1g8KGNBbRH9Clvl6hjYdn7JkGLW6gPQTO?usp=sharing)
+- from [Baidu disk](https://pan.baidu.com/s/1visZLh5QEXqQakdVOlPqhg) (extraction code: 0163)
+
+<br/>3. Run socket server to handle requests of basketball players from game clients:  
 `$ python3 ./server/server_3v3.py` to start the server for communication with game clients. There are also several 
 configurations: 
 - '-f': Run full game mode or 'divide and conquer' mode
@@ -29,8 +33,7 @@ configurations:
 - '-l': Log port
 - '-t': Test mode 
 
-
-Start game client on computer with windows7/8/10 operation system:  
+<br/>4. Start game client on computer with windows7/8/10 operation system:  
 `1. cd 'client', unzip 'builtinAI.zip' or 'selfplay.zip'` to get game clients for playing with built-in AI or doing selfplay.<br/>
 `2. double-click 'run_3v3_client.bat'` to start corresponding 3v3 game (remember to change the ip address to the server's ip first, see [Game setting](materials/doc/settings.md))
 
