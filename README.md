@@ -1,6 +1,6 @@
 ![image text](materials/image/Fuxi_logo.png)
 
-# **FeverBasketball**
+# **FeverBasketball OpenSource**
 
 This repository contains an RL environment based on a commercial online basketball game named [Fever Basketball](https://chao.163.com/).
 It was created by the [Netease Leihuo Technology](https://leihuo.163.com/) and the [Netease FuXi AI lab](https://fuxi.163.com/) for research purposes.
@@ -10,28 +10,34 @@ It was created by the [Netease Leihuo Technology](https://leihuo.163.com/) and t
 <img src=materials/image/dunk.png width="25%" height="25%"></div>
 
 usefull links:
-*  Our AAMAS20 Paper (Extended Abstract): [Mastering Basketball with Deep Reinforcement Learning: An Integrated Curriculum Training Approach](https://aamas2020.conference.auckland.ac.nz/extended-abstracts/)
-*  Demos: https://www.youtube.com/watch?v=l2SLUydyijs&t=97s
+*  Our AAMAS20 Paper: [Mastering Basketball with Deep Reinforcement Learning: An Integrated Curriculum Training Approach](https://aamas2020.conference.auckland.ac.nz/extended-abstracts/)
+*  Full paper: [Fever Basketball: A Complex, Flexible, and Asynchronized Sports Game Environment for Multi-agent Reinforcement Learning](https://arxiv.org/abs/2012.03204)
 
 # **Quick Start**
 
 Clone the project to your computer:  
-`$ git clone https://github.com/FuxiRL/FeverBasketball.git`  
+`$ git clone ssh://git@gitlab.leihuo.netease.com:32200/jiahangtian/feverbasketball-opensource.git`  
 `$ cd feverbasketball-opensource `  
 
 Run socket server to handle requests of basketball players from game clients:  
-`$ python3 ./Manager/run_server.py`  
+`$ python3 ./server/server_3v3.py` to start the server for communication with game clients. There are also several 
+configurations: 
+- '-f': Run full game mode or 'divide and conquer' mode
+- '-m': Use multi-agent mode or single agent mode
+- '-a': Choose corresponding algorithm
+- '-p': Port to communicate with game clients
+- '-l': Log port
+- '-t': Test mode 
 
-Start game clinet on computer with windows7/8/10 operation system:  
-`1. unzip FeverBasketball.zip`  
-`2. cd 'FeverBasketball/selfplay_pack'` or `'/built_in_AI_pack'` to do self-play or play with built-in AI  
-`3. double-click 'run_1v1_test.bat'` to start 1v1 game or `'run_3v3_test.bat'` to start 3v3 game (remember to change the ip address to the server's ip first, see [Game setting](materials/doc/settings.md))
 
-# **Train your agents**
+Start game client on computer with windows7/8/10 operation system:  
+`1. cd 'client', unzip 'builtinAI.zip' or 'selfplay.zip'` to get game clients for playing with built-in AI or doing selfplay.<br/>
+`2. double-click 'run_3v3_client.bat'` to start corresponding 3v3 game (remember to change the ip address to the server's ip first, see [Game setting](materials/doc/settings.md))
 
-Inherit the class of **BaseAgent** (which is a agent with random policy) 
-in `./Manager/algorithm/base_agent.py` to define your own agent. 
-(Please see the `dqn_agent.py` and `run_server_dqn.py` for example.) 
+# **Adding new algorithms**
+
+Put your algorithm in .server/algorithm/method to add your own algorithm.
+(Please see the `dqn.py` demo for the interaction APIs.) 
 
 # **Contents**
 *  [Game introduction](#game-introduction)
@@ -83,3 +89,4 @@ The mapping of the keyboard is as follows. Notice that the keys map to different
 *  `D`: shoot / block
 
 ## Benchmarks
+Please refer to our paper for more information.
