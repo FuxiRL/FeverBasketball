@@ -16,8 +16,7 @@ usefull links:
 # **Quick Start**
 
 <br/>1. Clone the project to your computer:  
-`$ git clone ssh://git@gitlab.leihuo.netease.com:32200/jiahangtian/feverbasketball-opensource.git`  
-`$ cd feverbasketball-opensource `  
+`$ git clone https://github.com/FuxiRL/FeverBasketball.git`  
 
 <br/>2. Download game clients:
 - from [Google drive](https://drive.google.com/drive/folders/1g8KGNBbRH9Clvl6hjYdn7JkGLW6gPQTO?usp=sharing)
