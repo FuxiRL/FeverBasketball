@@ -7,9 +7,9 @@ This repository contains an RL environment based on a commercial online basketba
 It was created by the [Netease Leihuo Technology](https://leihuo.163.com/) and the [Netease FuXi AI lab](https://fuxi.163.com/) for research purposes.
 -->
 
-<div align=center><img src=materials/image/jumpball.png width="50%" height="50%">
-<img src=materials/image/pass.png width="50%" height="50%">
-<img src=materials/image/dunk.png width="50%" height="50%"></div>
+<div align=center><img src=materials/image/jumpball.png width="35%" height="35%">
+<img src=materials/image/pass.png width="35%" height="35%">
+<img src=materials/image/dunk.png width="35%" height="35%"></div>
 
 <!---
 usefull links:
