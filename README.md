@@ -19,8 +19,9 @@ usefull links:
 
 # **Quick Start**
 
-<br/>1. Clone the project to your computer:  
+<br/>1. Clone the project to your computer and install requirements:  
 `$ git clone https://github.com/FeverBasketballOpenSource/FeverBasketball.git`  
+`$ pip3 install -r requirements.txt`  
 
 <br/>2. Download game clients:
 - from [Google drive](https://drive.google.com/drive/folders/1g8KGNBbRH9Clvl6hjYdn7JkGLW6gPQTO?usp=sharing)
