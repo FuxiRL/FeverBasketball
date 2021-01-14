@@ -38,7 +38,7 @@ configurations:
 
 <br/>4. Start game client on computer with windows7/8/10 operation system (Ubuntu not supported yet):  
 `1. cd 'client', unzip 'builtinAI.zip' or 'selfplay.zip'` to get game clients for playing with built-in AI or doing selfplay.<br/>
-`2. double-click 'run_3v3_client.bat'` to start corresponding 3v3 game (remember to change the ip address to the server's ip first, see [Game setting](materials/doc/settings.md))
+`2. double-click 'run_3v3_client.bat'` to start corresponding 3v3 game (remember to change the ip address to the server's ip first, see [Game setting](materials/doc/settings.md) and notice that this command can be run multiple times to launch a number of game clients.)
 
 # **Adding new algorithms**
 
