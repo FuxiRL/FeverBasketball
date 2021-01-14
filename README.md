@@ -1,3 +1,4 @@
+<!---
 ![image text](materials/image/Fuxi_logo.png)
 
 # **FeverBasketball OpenSource**
@@ -12,6 +13,7 @@ It was created by the [Netease Leihuo Technology](https://leihuo.163.com/) and t
 usefull links:
 *  Our AAMAS20 Paper: [Mastering Basketball with Deep Reinforcement Learning: An Integrated Curriculum Training Approach](https://aamas2020.conference.auckland.ac.nz/extended-abstracts/)
 *  Full paper: [Fever Basketball: A Complex, Flexible, and Asynchronized Sports Game Environment for Multi-agent Reinforcement Learning](https://arxiv.org/abs/2012.03204)
+-->
 
 # **Quick Start**
 
