@@ -5,11 +5,13 @@
 
 This repository contains an RL environment based on a commercial online basketball game named [Fever Basketball](https://chao.163.com/).
 It was created by the [Netease Leihuo Technology](https://leihuo.163.com/) and the [Netease FuXi AI lab](https://fuxi.163.com/) for research purposes.
+-->
 
 <div align=center><img src=materials/image/jumpball.png width="25%" height="25%">
 <img src=materials/image/pass.png width="25%" height="25%">
 <img src=materials/image/dunk.png width="25%" height="25%"></div>
 
+<!---
 usefull links:
 *  Our AAMAS20 Paper: [Mastering Basketball with Deep Reinforcement Learning: An Integrated Curriculum Training Approach](https://aamas2020.conference.auckland.ac.nz/extended-abstracts/)
 *  Full paper: [Fever Basketball: A Complex, Flexible, and Asynchronized Sports Game Environment for Multi-agent Reinforcement Learning](https://arxiv.org/abs/2012.03204)
@@ -18,7 +20,7 @@ usefull links:
 # **Quick Start**
 
 <br/>1. Clone the project to your computer:  
-`$ git clone https://github.com/FuxiRL/FeverBasketball.git`  
+`$ git clone https://github.com/FeverBasketballOpenSource/FeverBasketball.git`  
 
 <br/>2. Download game clients:
 - from [Google drive](https://drive.google.com/drive/folders/1g8KGNBbRH9Clvl6hjYdn7JkGLW6gPQTO?usp=sharing)
