@@ -44,7 +44,7 @@ class Method(object):
 
         self.sess = tf.Session()
         # if not self.test:
-        self.train_writer = tf.summary.FileWriter("./data/logs/" + self.name + '/' + 'dqn_lr_' + str(self.lr) + '_' +
+        self.train_writer = tf.summary.FileWriter("./data/logs/" + self.name + '/' + 'qmix_lr_' + str(self.lr) + '_' +
                                                   datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S'),
                                                   self.sess.graph)
         tf.summary.merge_all()
@@ -62,7 +62,7 @@ class Method(object):
             else:
                 model_list = {'33_attack': 360000, '33_defense': 450000, '33_freeball': 480000,
                               '33_ballclear': 320000, '33_assist': 390000}
-                checkpoint = path + 'dqn.ckpt-' + str(model_list[self.name])
+                checkpoint = path + 'qmix.ckpt-' + str(model_list[self.name])
             self.saver.restore(self.sess, checkpoint)
             print('##### testing mode: {} | model:{} #####'.format(self.name, checkpoint))
 
@@ -298,7 +298,7 @@ class Method(object):
         if self.learn_step_cnt % 10000 == 0 and self.learn_step_cnt > 0 and not self.test:
             path = './data/checkpoints/' + self.name + '/'
             if not os.path.exists(path): os.makedirs(path)
-            model_name = os.path.join(path, 'dqn.ckpt')
+            model_name = os.path.join(path, 'qmix.ckpt')
             save_path = self.saver.save(self.sess, model_name, global_step=self.learn_step_cnt)
             # print('save model %s' % save_path)
 
